@@ -78,7 +78,10 @@ Additional features:
 Internal tool — feedback and enhancements are handled internally. Contact the project lead for input.
 
 ## 🪪 License
-Internal use only. Not intended for public distribution.
+⚠️ License Notice  
+This repository was originally published under the MIT License.  
+As of April 22, 2025, the license has been changed to **CC BY-NC-ND 4.0**.  
+See the LICENSE file for details.
 
 ## 🔗 Additional Resources
 - **Related Projects:** SICAP Web, SICAP Windows App

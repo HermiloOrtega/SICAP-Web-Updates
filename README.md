@@ -8,10 +8,10 @@ It connects to an existing SQL Server database and periodically processes critic
 This application runs silently in the background via the system tray and was built with a strong focus on automation, performance, and data security.
 
 ### Updates screen
-![Screenshot](./assets/1.jpg) <!-- Replace with your image path -->
+![Screenshot](./assets/1.png) <!-- Replace with your image path -->
 
 ### Error log
-![Screenshot](./assets/2.jpg) <!-- Replace with your image path -->
+![Screenshot](./assets/2.png) <!-- Replace with your image path -->
 
 ## 💡 Idea & Concept
 The application was created to eliminate the manual data refresh routine that supported SICAP Web's dashboards and KPIs. My goals were to:

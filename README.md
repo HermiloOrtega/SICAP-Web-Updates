@@ -1,91 +1,100 @@
-# 📦 SICAP Updater
+# 📦 SICAP Updater (Automated Data Synchronization Service) V1-APRIL-28
 
 ## 🧭 Overview
-**SICAP Updater** is a robust Windows desktop application developed in C# to automate and streamline the data refresh process for the SICAP Web system. 
+**SICAP Updater** is a Windows application developed in C# to automatically synchronize operational data from the **SICAP** to **SICAP Web** and **SICAP Indicadores**.
 
-It connects to an existing SQL Server database and periodically processes critical business data from the legacy SICAP Windows application into modern web-consumable summaries. A manual update option is also available, giving users full control when needed.
-
-This application runs silently in the background via the system tray and was built with a strong focus on automation, performance, and data security.
+Its mission is to ensure KPIs, project tracking, and contract progress reporting are always up-to-date for directors, managers, administrative and technical staff, without manual intervention.
 
 ### Updates screen
-![Screenshot](./assets/1.png) <!-- Replace with your image path -->
+![Screenshot](./assets/1.png)
 
 ### Error log
-![Screenshot](./assets/2.png) <!-- Replace with your image path -->
+![Screenshot](./assets/2.png)
+
+---
 
 ## 💡 Idea & Concept
-The application was created to eliminate the manual data refresh routine that supported SICAP Web's dashboards and KPIs. My goals were to:
-- Automate periodic updates and reduce human error.
-- Keep executive dashboards always up-to-date.
-- Provide on-demand update control via a manual trigger.
-- Ensure secure, traceable, and reliable operations.
+- Automate the data refresh between operational (WinApp) and reporting (Web/Indicators) systems.
+- Replace manual refresh tasks with a reliable and secure background service.
+- Provide instant or scheduled updates to guarantee daily operational accuracy.
 
-Key data modules include:
-- Active Projects
-- Near-Completion Projects
-- Estimations (by Company and Category)
-- Additional Works / Overruns
-- Advance Payments
-- Estimation Days Tracker
+---
 
 ## ✨ Features & Functionality
-- ⏰ **Automated Scheduled Updates** via Windows Task Scheduler
-- 🖱 **Manual Update Button** for real-time refresh
-- 📊 **Data Summarization Engine** to optimize SICAP Web consumption
-- 📋 **Error Logging Panel** for real-time diagnostics
-- 🔐 **Secure Access** with encrypted credentials and communication
-- 🪟 **System Tray Integration** for minimal disruption and quick access
+- **Automated Scheduled Updates**:
+  - Background service automatically updating KPIs and summary tables daily.
+  
+- **Manual Update Trigger**:
+  - Manual update button available for urgent refresh needs.
+
+- **Error Handling & Logging**:
+  - Error capture with full detail (function, module, user, timestamp, exception message).
+  - Logs saved for later troubleshooting and analysis.
+
+- **System Tray Application**:
+  - Runs quietly in the background.
+  - Notification alerts in case of success, errors, or interruptions.
+
+- **Secure Environment Selection**:
+  - DEV, QAS, or PRD database environment selectable from the login interface.
+
+- **Single Instance Enforcement**:
+  - Ensures only one active instance runs on the system at any time.
+
+- **Startup Integration**:
+  - Configured to auto-launch on system startup ensuring 24/7 availability.
+
+---
 
 ## ⚙️ Tech Stack
-- **Language**: C#
-- **Platform**: Windows Forms (.Net Framework)
-- **Database**: SQL Server
-- **Utilities**: Windows Task Scheduler, System Tray API
-- **Security**: Encrypted connection strings, secured DB access
+- **Frontend**: Windows Forms (System Tray App)
+- **Language**: C# (.NET Framework)
+- **Database**: Microsoft SQL Server
+- **IDE**: Visual Studio
+- **Scheduling**: Windows Task Scheduler
+
+---
 
 ## 🏗 Architecture & Design
-- Pulls real-time operational data from legacy SICAP Windows app DB
-- Processes and summarizes into optimized reporting tables
-- Designed to run silently with system tray icon and background thread
-- All sensitive operations (like DB updates) are secured and logged
-- Error handling, fallback strategies, and clear logging ensure reliability
+- Scheduled data fetch and synchronization with minimal system footprint.
+- Layered approach separating UI, business logic, and database access.
+- Optimized stored procedures for quick synchronization cycles.
+- Encrypted connection strings and secure database access.
 
-## 🚀 Installation & Setup
-- **Requirements**: Windows OS, .NET Framework, SQL Server access
-- **Deployment**: Local installation on designated server or admin workstation
-- **Scheduling**: Managed through Windows Task Scheduler with custom intervals
-- **Access**: Admin-only; runs silently from system tray for low disruption
+---
 
-> **Note**: Internal deployment and maintenance handled by IT/Dev team.
+## 🚀 Deployment & Hosting
+- Installed on key internal servers with administrative permissions.
+- Automated execution through Windows Task Scheduler during low traffic hours.
+
+---
 
 ## 🧑‍💻 My Role & Contributions
-- 💻 Sole developer of the SICAP Updater system
-- 🧠 Architected update flow, scheduling logic, and DB integration
-- 🔒 Designed and implemented secure credential handling
-- 🔧 Developed error handling and user notification via tray icon
-- 🧪 QA tested with actual SICAP Web loads and validated against source system
+- Full system design and development.
+- Database optimization for rapid summary table updates.
+- UI/UX simplification for manual triggers.
+- Security enhancement for safe synchronization operations.
+
+---
 
 ## 🧗 Challenges & Learnings
-- Implemented real-world automation and data sync pipelines
-- Navigated cross-system integration between WinForms and Web stacks
-- Built an efficient data summarization layer from complex legacy systems
-- Gained hands-on experience with secure Windows services and background task design
-- Learned to manage long-running background processes with robust fault tolerance
+- Building a truly resilient and silent background service.
+- Managing synchronization across development, QA, and production environments without collision.
+- Ensuring error handling and recovery processes minimized operational risks.
+
+---
 
 ## 📈 Future Enhancements
-- Dynamic scheduling configuration UI for power users
-- Webhook support for real-time status reporting
-- Enhanced export/logging to SharePoint or centralized dashboard
-- Historical update tracking and analytics
+- Convert into a Windows Service instead of a user-launched app.
+- Add monitoring dashboards for real-time update tracking.
+- Automatic recovery and retry system for failed updates.
 
-## 🤝 Contributing
-This is an internal enterprise tool. Feedback and enhancements are handled by the in-house development and IT operations team.
+---
+
+## 🤝 Project Type
+Internal mission-critical tool for the **AHMSA** organization.
+
+---
 
 ## 🪪 License
-⚠️ **License Update**  
-Originally published under MIT. As of April 22, 2025, this project follows the **CC BY-NC-ND 4.0** license.  
-See LICENSE file for usage limitations.
-
-## 🔗 Additional Resources
-- **Related Projects**: [SICAP Web](#), [SICAP Windows App](#)
-- **Microsoft Relevance**: Demonstrates advanced C# desktop automation, SQL Server optimization, and secure integration patterns consistent with enterprise-scale tools.
+⚠️ Internal Use Only — Copyright reserved to AHMSA.

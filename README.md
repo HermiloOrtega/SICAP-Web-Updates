@@ -1,7 +1,7 @@
-# 📦 SICAP Updater (Automated Data Synchronization Service) V1-APRIL-28
+# 📦 SICAP Updater
 
 ## 🧭 Overview
-**SICAP Updater** is a Windows application developed in C# to automatically synchronize operational data from the **SICAP** to **SICAP Web** and **SICAP Indicadores**.
+**SICAP Updater** is a Windows application developed in C# to automatically synchronize operational data from the [**SICAP**](https://github.com/HermiloOrtega/SICAP) to [**SICAP Web**](https://github.com/HermiloOrtega/SICAP-Web) and [**SICAP Indicadores**](https://github.com/HermiloOrtega/SICAP-Indicators).
 
 Its mission is to ensure KPIs, project tracking, and contract progress reporting are always up-to-date for directors, managers, administrative and technical staff, without manual intervention.
 

@@ -47,11 +47,14 @@ Its mission is to ensure KPIs, project tracking, and contract progress reporting
 ---
 
 ## ⚙️ Tech Stack
-- **Frontend**: Windows Forms (System Tray App)
-- **Language**: C# (.NET Framework)
-- **Database**: Microsoft SQL Server
-- **IDE**: Visual Studio
-- **Scheduling**: Windows Task Scheduler
+| Category     | Tools & Frameworks |
+|--------------|--------------------|
+| **Frontend** | ![Windows Forms](https://img.shields.io/badge/Windows%20Forms-0078D7?logo=windows&logoColor=white&style=for-the-badge) |
+| **Language** | ![C#](https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white&style=for-the-badge) |
+| **Framework**| ![.NET Framework](https://img.shields.io/badge/.NET%20Framework-512BD4?logo=.net&logoColor=white&style=for-the-badge) |
+| **Database** | ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white&style=for-the-badge) |
+| **IDE**      | ![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?logo=visual-studio&logoColor=white&style=for-the-badge) |
+| **Other**    | ![Windows Scheduled Tasks](https://img.shields.io/badge/Windows%20Scheduled%20Tasks-0078D4?logo=windows&logoColor=white&style=for-the-badge) |
 
 ---
 
